@@ -73,6 +73,12 @@ h1 {
     animation: color 5s infinite;
 }
 
+h1::before{
+
+    content: "➡";
+    color: hotpink;
+}
+
 @keyframes color {
     25%{
 
@@ -96,6 +102,18 @@ h1 {
 
 /* Problem 2:  */
 /* Text Animation Styling  */
+
+h2{
+
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+h2::before{
+
+    content: "➡";
+    color: hotpink;
+}
 
 #text{
 
