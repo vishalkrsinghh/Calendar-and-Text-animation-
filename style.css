@@ -1,0 +1,155 @@
+
+/* Problem 1:  */
+/* Calendar Styling */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+    scroll-behavior: smooth;
+}
+
+td {
+
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+
+}
+
+.sunday {
+
+    background-color: #ffd6d6;
+    color: red;
+
+}
+
+th {
+
+    background-color: blueviolet;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-column-start: 20;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0px auto;
+}
+
+table {
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.january {
+    text-align: center;
+}
+
+.tab {
+    display: block;
+    background-color: rgb(0 255 107);
+    margin-bottom: 55px;  
+}
+
+table.tab:hover {
+    box-shadow: 0px 0px 20px black;
+}
+
+h1 {
+
+    text-align: center;
+    margin:50px 0px;
+    animation: color 5s infinite;
+}
+
+@keyframes color {
+    25%{
+
+        color: blue;
+    }
+    50%{
+
+        color:red;
+    }
+    75%{
+
+        color: yellowgreen;
+    }
+    100%{
+
+        color: cyan;
+    }
+   
+}
+
+
+/* Problem 2:  */
+/* Text Animation Styling  */
+
+#text{
+
+    text-align: center;
+    margin: 50px auto;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+#text>div::before{
+
+    content: "LIFESTYLE";
+    background-color: blueviolet;
+    color: red;
+    border-radius: 5px;
+    animation-name: change;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-weight: bolder;
+    padding: 5px 10px;
+}
+
+@keyframes change {
+    
+    25%{
+
+        content: "WORK";
+        background-color: aqua;
+        color: red;
+        border-radius: 5px;
+    }
+    50%{
+
+        content: "EVERYTHING";
+        background-color: rgb(0, 255, 42);
+        color: red;
+        border-radius: 5px;
+    }
+    75%{
+
+        content: "DAY";
+        background-color: rgb(217, 255, 0);
+        color: red;
+        border-radius: 5px;
+    }
+    100%{
+
+        content: "EYERYBODY";
+        background-color: rgb(255, 0, 170);
+        color: red;
+        border-radius: 5px;
+    }
+}
+
